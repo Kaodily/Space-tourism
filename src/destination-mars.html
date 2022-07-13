@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="bg-[url('/starter-code/assets/destination/background-destination-mobile.jpg')] h-screen sm:bg-[url('/starter-code/assets/destination/background-destination-tablet.jpg')] lg:bg-[url('/starter-code/assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-cover text-gray-200 font-['Barlow Condensed']"
+  >
+    <header class="flex justify-between">
+      <img
+        src="/starter-code/assets/shared/logo.svg"
+        alt="logo"
+        class="w-6 h-6 mt-5 ml-5 sm:ml-8 sm:w-8 sm:h-8 lg:w-9 lg:h-9 lg:mt-10 lg:ml-24"
+      />
+      <hr
+        class="border-1 w-[600px] border-[#6e6e6ef9] absolute top-16 left-96 hidden lg:block"
+      />
+      <img
+        src="/starter-code/assets/shared/icon-hamburger.svg"
+        alt="hamburger icon"
+        class="w-5 h-5 mt-5 mr-5 sm:hidden"
+      />
+      <div class="hidden sm:block">
+        <nav
+          class="w-[380px] h-[50px] sm:[400px] sm:h-[65px] lg:w-[600px] lg:h-[60px] lg:mt-6 bg-[#6e6e6e44] flex items-center lg:justify-center"
+        >
+          <ul class="flex lg:justify-center text-[8px] lg:text-[9px] uppercase">
+            <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+              <span class="font-extrabold mr-1 hidden lg:inline-block">00</span
+              ><a href="#">Home</a>
+            </li>
+            <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+              <span class="font-extrabold mr-1 hidden lg:inline-block">01</span
+              ><a href="#">Destination</a>
+            </li>
+            <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+              <span class="font-extrabold mr-1 hidden lg:inline-block">02</span
+              ><a href="#">Crew</a>
+            </li>
+            <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+              <span class="font-extrabold mr-1 hidden lg:inline-block">03</span
+              ><a href="#">Technology</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="text-center lg:mt-14 ">
+      <p class="uppercase text-[12px] hover:border-b-2 sm:ml-16 lg:ml-24 mb-10 sm:text-left"><span class="text-gray-400"> 01</span> Pick your destination</p>
+      <section class="lg:grid lg:grid-cols-2 lg:ml-28 lg:mt-16 ">
+    <img
+      class="w-44 m-auto sm:w-60 lg:w-80 "
+      src="/starter-code/assets/destination/image-mars.png"
+      alt="moon"
+    />
+ <div class=" lg:ml-24 ">
+  <ul class="flex justify-center lg:justify-start mt-8 lg:ml-24  text-[10px] uppercase mb-6 ">
+    <li class="mr-4 hover:border-b-2">Moon</li>
+    <li class="mr-4 ml-4 hover:border-b-2">Mars</li>
+    <li class="mr-4 ml-4 hover:border-b-2">Europa</li>
+    <li class="mr-4 ml-4 hover:border-b-2">Titan</li>
+  </ul>
+<div class="lg:text-left">
+  <h1 class="text-[40px] lg:text-[60px] lg:ml-24  uppercase">Mars</h1>
+  <p class="text-[13px] font-['Barlow'] font-normal leading-6 px-16 lg:pt-6 lg:px-24 pb-8 lg:pb-10 ">
+    Don’t forget to pack
+    your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
+    planetary mountain in our solar system. It’s two and a half times the size
+    of Everest!
+  </p>
+  <hr class="border-1 w-[320px] sm:w-[450px] lg:w-[300px] m-auto lg:ml-24  border-[#6e6e6ef9]" >
+</div>
+ 
+  <section class="mt-6 sm:flex sm:justify-center lg:justify-start lg:ml-24 ">
+    <p class="text-[8px] mr-3 uppercase sm:mr-20">Avg. distance <br /><span class="text-[20px]">225 mil. km</span></p>
+  <p class="text-[8px] mr-3 uppercase mt-5 sm:mt-0">
+    Est. travel time <br />
+    <span class="text-[20px]"> 9 months</span>
+  </p>
+  </section>
+</div>
+ </section>
+    </main>
+  </body>
+</html>

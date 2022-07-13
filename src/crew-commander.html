@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@600&family=Bellefair&family=Big+Shoulders+Display:wght@700&family=DM+Serif+Display&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Gideon+Roman&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+
+  <body
+    class="bg-[url('/starter-code/assets/crew/background-crew-mobile.jpg')] h-screen sm:h-full md:h-full sm:bg-[url('/starter-code/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('/starter-code/assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover text-gray-200 font-['Barlow Condensed']"
+  >
+  <header class="flex justify-between">
+    <img
+      src="/starter-code/assets/shared/logo.svg"
+      alt="logo"
+      class="w-7 h-7 mt-4 ml-5 sm:ml-8 sm:w-12 sm:h-12 lg:w-10 lg:h-10 lg:mt-10 lg:ml-24"
+    />
+    <hr
+      class="border-1 w-[600px] border-[#6e6e6ef9] absolute top-16 left-96 hidden lg:block"
+    />
+    <img
+      src="/starter-code/assets/shared/icon-hamburger.svg"
+      alt="hamburger icon"
+      class="w-5 h-5 mt-5 mr-5 sm:hidden hamburger"
+    />
+    <div class="hidden sm:block">
+      <nav
+        class="w-[380px] h-[50px] sm:[550px] sm:h-[100px] lg:w-[600px] lg:h-[60px] lg:mt-6 bg-[#6e6e6e44] flex items-center lg:justify-center"
+      >
+        <ul class="flex lg:justify-center text-[8px] sm:text-[11px] lg:text-[11px] uppercase">
+          <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+            <span class="font-extrabold mr-1 hidden lg:inline-block">00</span
+            ><a href="/src/index.html">Home</a>
+          </li>
+          <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+            <span class="font-extrabold mr-1 hidden lg:inline-block">01</span
+            ><a href="/src/destination-moon.html">Destination</a>
+          </li>
+          <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+            <span class="font-extrabold mr-1 hidden lg:inline-block">02</span
+            ><a href="/src/crew-commander.html">Crew</a>
+          </li>
+          <li class="mr-3 hover:border-b-2 ml-8 lg:mr-2">
+            <span class="font-extrabold mr-1 hidden lg:inline-block">03</span
+            ><a href="/src/technology-vehicle.html">Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <header class="hidden mobileNav">
+    <nav
+    class="sm:hidden absolute top-0 right-0 h-full flex justify-between px-4 py-7 bg-black  w-60 "
+  >
+    <div >
+      <ul class="text-[11px] uppercase text-white mt-12">
+        <li class=" mb-5">
+          <span class="font-extrabol mr-1 d">00</span
+          ><a href="/src/index.html">Home</a>
+        </li>
+        <li class="mb-5">
+          <span class="font-extrabold mr-1 ">01</span
+          ><a href="/src/destination-moon.html">Destination</a>
+        </li>
+        <li class="mb-5">
+          <span class="font-extrabold mr-1 ">02</span
+          ><a href="/src/crew-commander.html">Crew</a>
+        </li>
+        <li class="mb-5">
+          <span class="font-extrabold mr-1 ">03</span
+          ><a href="/src/technology-vehicle.html">Technology</a>
+        </li>
+      </ul>
+    </div>
+
+   <div>
+    <img class="close" src="/starter-code/assets/shared/icon-close.svg" alt="" />
+   </div>
+  </nav>
+  </header>
+
+    <main class="text-center sm:mt-10 lg:mt-5">
+      <p
+        class="uppercase font-['Barlow_Condensed'] text-[16px] mt-8 sm:text-[32px] sm:ml-16 tracking-[0.2em] mb-10 sm:text-left lg:ml-48"
+      >
+        <span class="text-gray-400 pr-3">02</span> Meet your crew
+      </p>
+      <section
+        class="sm:flex sm:flex-col-reverse lg:flex lg:flex-row-reverse lg:ml-2 lg:mt-16 lg:mr-5"
+      >
+        <div>
+          <img
+            class="crewImage w-52 h-full 2 m-auto sm:w-72 lg:w-[430px]"
+            src="/starter-code/assets/crew/image-douglas-hurley.png"
+            alt="crew"
+          />
+          <hr class="border-1 w-[320px] sm:hidden m-auto border-[#6e6e6ef9]" />
+        </div>
+        <div class="lg:ml-48 lg:mt-52">
+          <ul
+            class="flex justify-center lg:justify-start mt-8 text-[10px] uppercase mb-6 sm:hidden"
+          >
+            <li
+              class="commander mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+            ></li>
+            <li
+              class="missionSpecialist mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+            ></li>
+            <li
+              class="pilot mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+            ></li>
+            <li
+              class="flightEngineer mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+            ></li>
+          </ul>
+          <div class="lg:text-left">
+            <div class="lg:w-1/2">
+              <p class="uppercase tracking-[0.2em] font-['Barlow_Condensed'] text-[16px] sm:text-[32px] crewTitle">Commander</p>
+              <h1 class="text-[28px] sm:text-[34px] lg:text-[40px] font-['Bellefair'] uppercase py-3 crewName">
+                Douglas Hurley
+              </h1>
+              <p
+                class="text-[16px] font-['Barlow'] font-normal leading-6 sm:leading-8 px-8 sm:px-[60px] lg:px-0 text-[#D0D6F9] crewBio"
+              >
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </div>
+            <div class="hidden sm:flex justify-center lg:justify-start">
+              <ul
+                class="flex justify-center lg:justify-start sm:mt-8 text-[10px] uppercase mb-6 lg:mt-[80px] text-[#D0D6F9]"
+              >
+                <li
+                  class="commander mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500  hover:bg-white"
+                ></li>
+                <li
+                  class="missionSpecialist mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+                ></li>
+                <li
+                  class="pilot mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+                ></li>
+                <li
+                  class="flightEngineer mr-3 hover:border-b-2 w-2 h-2 rounded-full bg-slate-500 hover:bg-white"
+                ></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/src/jquery-3.6.0.js"></script>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
